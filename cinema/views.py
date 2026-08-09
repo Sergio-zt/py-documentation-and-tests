@@ -203,7 +203,9 @@ class MovieSessionViewSet(viewsets.ModelViewSet):
             OpenApiParameter(
                 "date",
                 type={"type": "list", "items": {"type": "number"}},
-                description="Filer by Session Date ( %Y-%m-%d ex. ?date=2026-08-09)"
+                description=(
+                    "Filer by Session Date (%Y-%m-%d ex. ?date=2026-08-09)"
+                )
             )
         ]
     )
